@@ -45,9 +45,4 @@ public class CourseController {
         courses.add(course);
         return course;
     }
-
-    @GetMapping("/me")
-    public Object getUserInfo(@AuthenticationPrincipal Jwt jwt) {
-        return jwt.getClaims();
-    }
 }

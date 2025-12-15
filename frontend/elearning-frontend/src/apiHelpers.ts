@@ -11,6 +11,6 @@ export async function fetchUserInfo(): Promise<any> {
 }
 
 export async function fetchClaims(): Promise<any> {
-    const res = await api.get('/courses/me');
+    const res = await api.get('/me');
     return res.data;
 }
